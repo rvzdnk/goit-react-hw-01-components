@@ -1,6 +1,6 @@
 import { Container } from "./Container/Container";
 
-import { Profile } from './profile/Profile';
+import { Profile } from './Profile/Profile';
 import user from '../data/user.json';
 
 
@@ -10,7 +10,7 @@ export const App = () => {
 
   return (
     <>
-    <Contaier>
+    <Container>
         <Profile
           username={username}
           tag={tag}
@@ -18,7 +18,7 @@ export const App = () => {
           avatar={avatar}
           stats={stats}
         />
-    </Contaier>
+    </Container>
     </>
   );
 };

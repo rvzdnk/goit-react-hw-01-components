@@ -1,11 +1,11 @@
 import PropTypes from "prop-types";
 import styles from './Profile.modules.scss';
 
-export const Profile = ({username, tag, location, avatar,stats,}) => {
+export const Profile = ({username, tag, location, avatar, stats}) => {
 
 const {followers, views, likes} = stats;
 const {profile, description, description__avatar, description__location, description__name,
-    description__tag, stats, stats__label, stats__quantity} = styles;
+    description__tag, statistics, statistics__label, statistics__quantity} = styles;
 
 return(
     <div className={profile}>
@@ -20,18 +20,18 @@ return(
             <p className={description__location}>{location}</p>
         </div>
 
-        <ul className={stats}>
+        <ul className={statistics}>
             <li>
-                <span className={stats__label}>Followers</span>
-                <span className={stats__quantity}>{followers}</span>
+                <span className={statistics__label}>Followers</span>
+                <span className={statistics__quantity}>{followers}</span>
             </li>
             <li>
-                <span className={stats__label}>Views</span>
-                <span className={stats__quantity}>{views}</span>
+                <span className={statistics__label}>Views</span>
+                <span className={statistics__quantity}>{views}</span>
             </li>
             <li>
-                <span className={stats__label}>Likes</span>
-                <span className={stats__quantity}>{likes}</span>
+                <span className={statistics__label}>Likes</span>
+                <span className={statistics__quantity}>{likes}</span>
             </li>
         </ul>
     </div>
