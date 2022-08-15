@@ -1,15 +1,15 @@
 import { Container } from "./Container/Container";
 
-import { Profile } from './Profile/Profile';
+import { Profile } from "./Profile/Profile";
 import user from '../data/user.json';
 
-import { Statistics } from './Statistics/Statistics';
+import { Statistics } from "./Statistics/Statistics";
 import data from '../data/data.json';
 
-import { FriendList } from './FriendList/FriendList';
+import { FriendList } from "./FriendList/FriendList";
 import friends from '../data/friends.json';
 
-import { TransactionHistory } from './TransactionHistory/TransactionHistory';
+import { TransactionHistory } from "./TransactionHistory/TransactionHistory";
 import transaction from '../data/transaction.json';
 
 export const App = () => {
@@ -17,7 +17,6 @@ export const App = () => {
   const {username, tag, location, avatar, stats} = user;
 
   return (
-    <>
     <Container>
         <Profile
           username={username}
@@ -37,6 +36,5 @@ export const App = () => {
         items={transaction}
         />
     </Container>
-    </>
   );
 };
