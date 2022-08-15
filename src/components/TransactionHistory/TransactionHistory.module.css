@@ -1,0 +1,37 @@
+.transactions{
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    border-collapse: collapse;
+}
+
+.header__row{
+    background-color: skyblue;
+}
+
+.header{
+    width: calc(100%/3);
+    color: white;
+    font: 16px bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border: 1px solid white;
+    padding: 20px 10px;
+}
+
+.data__row:nth-of-type(even){
+    background-color:lightgray;
+}
+
+.data__type,
+.data{
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid skyblue;
+    color: #404040;
+    padding: 10px 0;
+}
+
+.data__type{
+    text-transform: capitalize;
+}
