@@ -23,7 +23,8 @@
 }
 
 .description__name{
-    font: 20px bold;
+    font-size: 20px;
+    font-weight: bold;
     line-height: 1.5;
     color:black;
     text-align: center;
@@ -31,7 +32,7 @@
 
 .description__tag,
 .description__location{
-    font: 16px;
+    font-size: 16px;
     color:darkgrey;
     text-align: center;
     line-height: 1.5;
@@ -58,13 +59,14 @@
   }
 
 .statistics__label{
-    font: 12px;
+    font-size: 14px;
     color: grey;
     line-height: 1.2;
 }
 
 .statistics__quantity{
-    font: 16px bold;
+    font-size: 16px;
+    font-weight: 900;
     color: black;
     line-height: 1.2;
 }
