@@ -7,7 +7,8 @@
 
 .statistics__title{
     text-align: center;
-    font: 20px normal;
+    font-size: 20px;
+    font-weight: normal;
     text-transform: uppercase;
     padding: 20px 0;
 }
